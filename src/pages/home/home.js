@@ -1,5 +1,4 @@
 import React from 'react'
-import { Divider } from 'antd';
 import './home.less';
 
 export default class Home extends React.Component{
