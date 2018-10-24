@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route,Switch,Link,HashRouter} from 'react-router-dom'
+import {Route,Switch,HashRouter} from 'react-router-dom'
 import About from './about'
 import Main from './main'
 import Home from './home'

@@ -6,6 +6,8 @@
 }
 .container .main {
   background-color: #f1f3f5;
+  height: 100vh;
+  overflow: auto;
 }
 .container .content {
   position: relative;
