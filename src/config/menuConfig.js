@@ -1,11 +1,13 @@
 const menuList = [
     {
         title: '首页',
-        key: '/home'
+        key: '/home',
+        icon:'home'
     },
     {
         title: 'UI',
         key: '/ui',
+        icon:'hourglass',
         children: [
             {
                 title: '按钮',
@@ -44,42 +46,47 @@ const menuList = [
     {
         title: '表单',
         key: '/form',
+        icon:'form',
         children: [
             {
                 title: '登录',
-                key: '/form/login',
+                key: '/form/login/login',
             },
             {
                 title: '注册',
-                key: '/form/reg',
+                key: '/form/login/register',
             }
         ]
     },
     {
         title: '表格',
         key: '/table',
+        icon:'table',
         children: [
             {
                 title: '基础表格',
-                key: '/table/basic',
+                key: '/table/basicTable',
             },
             {
                 title: '高级表格',
-                key: '/table/high',
+                key: '/table/highTable',
             }
         ]
     },
     {
         title: '富文本',
-        key: '/rich'
+        key: '/rich',
+        icon:'profile'
     },
     {
         title: '城市管理',
-        key: '/city'
+        key: '/city',
+        icon:'globle',
     },
     {
         title: '订单管理',
         key: '/order',
+        icon:'solution',
         btnList: [
             {
                 title: '订单详情',
@@ -93,15 +100,18 @@ const menuList = [
     },
     {
         title: '员工管理',
-        key: '/user'
+        key: '/user',
+        icon:'usergroup-add'
     },
     {
         title: '车辆地图',
-        key: '/bikeMap'
+        key: '/bikeMap',
+        icon:'environment'
     },
     {
         title: '图标',
         key: '/charts',
+        icon:'gateway',
         children: [
             {
                 title: '柱形图',
@@ -119,7 +129,8 @@ const menuList = [
     },
     {
         title: '权限设置',
-        key: '/permission'
+        key: '/permission',
+        icon:'setting'
     },
 ];
 export default menuList;

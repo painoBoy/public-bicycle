@@ -7,7 +7,7 @@ export default class Carousels extends React.Component{
         return(
             <div>
                 <Card title="走马灯" className="card" >
-                    <Carousel autoplay ={true}>
+                    <Carousel autoplay ={true} effect="fade">
                         <div><h3>React</h3></div>
                         <div><h3>Vue</h3></div>
                         <div><h3>Angular</h3></div>

@@ -1,17 +1,22 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
-import { Menu } from "antd";
+import { Menu ,Icon,Button} from "antd";
 import MenuConfig from "./../../config/menuConfig";
 import "./NavLeft.less";
 
 const SubMenu = Menu.SubMenu;
+// const MenuItemGroup = Menu.ItemGroup;
 
 export default class NavLeft extends React.Component {
+  state = {
+    collapsed: false
+  }
   componentWillMount() {
     const menuTreeNode = this.renderMenu(MenuConfig);
 
     this.setState({
-      menuTreeNode
+      menuTreeNode,
+      collapsed: !this.state.collapsed
     });
   }
   //渲染菜单栏
@@ -19,7 +24,7 @@ export default class NavLeft extends React.Component {
     return data.map(item => {
       if (item.children) {
         return (
-          <SubMenu title={item.title} key={item.key}>
+          <SubMenu key={item.key} title={item.title}>
             {this.renderMenu(item.children)}
           </SubMenu>
         );
@@ -39,7 +44,12 @@ export default class NavLeft extends React.Component {
           <img src="/assets/logo-ant.svg" alt="" />
           <h1>Bicycle-Sharing</h1>
         </div>
-        <Menu theme="dark">{this.state.menuTreeNode}</Menu>
+        <Menu theme="dark"
+              // mode="inline"
+              // inlineCollapsed={this.state.collapsed}
+        >
+        {this.state.menuTreeNode}
+        </Menu>
       </div>
     );
   }
