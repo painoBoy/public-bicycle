@@ -5,24 +5,29 @@ import Footer from './components/Footer/Footer'
 import NavLeft from './components/NavLeft/NavLeft'
 import Home from './pages/home/home'
 import './style/common.less'
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+import {LocaleProvider} from 'antd'
 
 
 export default class Admin extends React.Component{
     render(){
         return(
-            <Row className="container">
-                <Col span="4" className="nav-left">
-                <NavLeft />
-                </Col>
-                <Col span="20" className="main">
+            <LocaleProvider locale={zhCN}>
+                <Row className="container">
+                    <Col span="3" className="nav-left">
+                        <NavLeft/>
+                    </Col>
+                <Col span="21" className="main">
                 <Header/>
                 <Row className="content">
-                    {/* <Home /> */}
+                    {/* <Home/> */}
                     {this.props.children}
                 </Row>
                 <Footer/>
-                </Col>
-            </Row>
+            </Col>
+        </Row>
+            </LocaleProvider>
+            
         )
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import {Card,Table,Modal,Spin} from 'antd'
+import {Card,Table,Modal,Spin,Badge,message} from 'antd'
 // import './../ui/ui.less'
 import axios from 'axios'
+import Messages from '../ui/messages';
 // import Axios from './../../axios/index'
 
 export default class highTable extends React.Component{
@@ -16,6 +17,21 @@ export default class highTable extends React.Component{
           this.request()
     }
 
+        // 删除操作
+        handleDelete = (item)=>{
+            let id = item.id;
+            Modal.confirm({
+                title:'确认',
+                okText: '确认',
+                cancelText: '取消',
+                content:'您确认要删除此条数据吗？',
+                onOk:()=>{
+                    message.success('删除成功');
+                    this.request();
+                }
+            })
+        }
+
     request = ()=>{
         let baseUrl = 'https://www.easy-mock.com/mock/5bd67efe441b485820767219/ItemApi';
         axios.get(baseUrl+'/table/list').then((res)=>{
@@ -26,7 +42,6 @@ export default class highTable extends React.Component{
                         dataSource2:data,
                         loading:false
                     })
-                    console.log(data);
                 }else{
                     Modal.info({
                         title:'提示',
@@ -53,10 +68,12 @@ export default class highTable extends React.Component{
         // })
         
     }
+   
     render(){
+      
         let config = {
-            "1":'LOL',
-            '2':'PUBG',
+            "1":<Badge  status="success" text="LOL" />,
+            '2':<Badge  status="error" text="PUBG" />,
             '3':'Dota2',
             '4':'星际争霸',
             '5':'守望先锋'
@@ -154,6 +171,13 @@ export default class highTable extends React.Component{
                 return status[idx]
             },
             width:80,
+          },
+          {
+            title:'操作',
+            render:(text,item)=>{
+                return (<a onClick={(item) => { this.handleDelete(item) }}>删除</a>)
+            },
+            width:80,
           }];
           const selection = {
               type:'radio'
@@ -205,3 +229,4 @@ export default class highTable extends React.Component{
         )
     }
 }
+
