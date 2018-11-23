@@ -1,13 +1,11 @@
 const menuList = [
     {
         title: '首页',
-        key: '/home',
-        icon:'home'
+        key: '/home'
     },
     {
         title: 'UI',
         key: '/ui',
-        icon:'hourglass',
         children: [
             {
                 title: '按钮',
@@ -46,47 +44,42 @@ const menuList = [
     {
         title: '表单',
         key: '/form',
-        icon:'form',
         children: [
             {
                 title: '登录',
-                key: '/form/login/login',
+                key: '/form/login',
             },
             {
                 title: '注册',
-                key: '/form/login/register',
+                key: '/form/reg',
             }
         ]
     },
     {
         title: '表格',
         key: '/table',
-        icon:'table',
         children: [
             {
                 title: '基础表格',
-                key: '/table/basicTable',
+                key: '/table/basic',
             },
             {
                 title: '高级表格',
-                key: '/table/highTable',
+                key: '/table/high',
             }
         ]
     },
     {
         title: '富文本',
-        key: '/rich',
-        icon:'profile'
+        key: '/rich'
     },
     {
         title: '城市管理',
-        key: '/city',
-        icon:'globle',
+        key: '/city'
     },
     {
         title: '订单管理',
         key: '/order',
-        icon:'solution',
         btnList: [
             {
                 title: '订单详情',
@@ -100,18 +93,15 @@ const menuList = [
     },
     {
         title: '员工管理',
-        key: '/user',
-        icon:'usergroup-add'
+        key: '/staff'
     },
-    {
+    { 
         title: '车辆地图',
-        key: '/bikeMap',
-        icon:'environment'
+        key: '/map'
     },
     {
         title: '图标',
         key: '/charts',
-        icon:'gateway',
         children: [
             {
                 title: '柱形图',
@@ -129,8 +119,7 @@ const menuList = [
     },
     {
         title: '权限设置',
-        key: '/permission',
-        icon:'setting'
+        key: '/permission'
     },
 ];
 export default menuList;

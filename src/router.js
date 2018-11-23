@@ -19,13 +19,24 @@ import BasicTables from  './pages/table/basicTable'
 import HighTable from './pages/table/highTable';
 import City from './pages/city/city'
 import Order from './pages/order'
+import Common from './common'
+import OrderDetail from './pages/order/detail'
+import StaffManage from './pages/staff'
+import BikeMap from './pages/map';
 
 export default class IRouter extends React.Component{
     render(){        
         return(
             <HashRouter>
                     <App>
+                        <Switch>
                         <Route path='/login' component={Login}/>
+                        <Route path="/common" render={() =>
+                            <Common>
+                                <Route path="/common/order/detail/:orderId" component={OrderDetail} /> 
+                            </Common>
+                        }
+                        />
                         <Route path='/' render = {()=>
                             <Admin>
                                 <Switch>
@@ -38,18 +49,20 @@ export default class IRouter extends React.Component{
                                     <Route path='/ui/tabs' component={Tabis}/>
                                     <Route path='/ui/gallery' component={Gallery}/>
                                     <Route path='/ui/carousel' component={Carousels}/>
-                                    <Route path='/form/login/login' component={FormLogin}/>
-                                    <Route path='/form/login/register' component={FormRegister}/>
-                                    <Route path='/table/basicTable' component={BasicTables}/>
-                                    <Route path='/table/highTable' component={HighTable}/>
+                                    <Route path='/form/login' component={FormLogin}/>
+                                    <Route path='/form/reg' component={FormRegister}/>
+                                    <Route path='/table/basic' component={BasicTables}/>
+                                    <Route path='/table/high' component={HighTable}/>
                                     <Route path='/city' component={City}/>
                                     <Route path='/order' component={Order}/>
+                                    <Route path='/staff' component={StaffManage}/>
+                                    <Route path='/map' component={BikeMap}/>
                                     <Route component={noFound}/>
                                 </Switch>
                                 
                             </Admin>                 
                             }/>
-                        <Route path='/order/detail' component={Login}/>
+                        </Switch>
                     </App>
             </HashRouter>
         )

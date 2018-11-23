@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card,Button,Upload,Radio,Switch,Select,DatePicker,Icon,TimePicker,Form,Input,message,InputNumber} from 'antd'
+import {Card,Button,Upload,Radio,Select,DatePicker,Icon,Form,Input,message} from 'antd'
 import moment from 'moment'
 import locale from 'antd/lib/date-picker/locale/zh_CN';
 import 'moment/locale/zh-cn';

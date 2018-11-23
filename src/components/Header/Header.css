@@ -9,8 +9,17 @@
   padding: 0 20px;
   text-align: right;
 }
-.header .header-top span {
-  margin-right: 40px;
+.header .header-top .logo {
+  line-height: 60px;
+  text-align: left;
+  font-size: 18px;
+}
+.header .header-top .logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+.header .header-top .logo span {
+  margin-left: 5px;
 }
 .header .breadcrumb {
   font-size: 18px;
@@ -46,4 +55,8 @@
 .header .breadcrumb .weather .weather-detail {
   margin-left: 5px;
   vertical-align: middle;
+}
+.simple-page .header-top {
+  background: #1890ff;
+  color: #ffffff;
 }

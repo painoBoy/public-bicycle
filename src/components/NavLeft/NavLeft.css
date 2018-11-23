@@ -1,13 +1,13 @@
-.logo {
+.nav-left .logo {
   line-height: 90px;
   padding-left: 20px;
   background-color: #001529;
 }
-.logo img {
+.nav-left .logo img {
   height: 35px;
   vertical-align: middle;
 }
-.logo h1 {
+.nav-left .logo h1 {
   color: #fff;
   font-size: 20px;
   margin: 0 0 0 10px;

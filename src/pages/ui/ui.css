@@ -8,6 +8,9 @@ button {
 .Btngroup {
   margin-right: 0;
 }
+.table-head {
+  text-align: center!important;
+}
 /* ui */
 .card-wrap {
   margin-bottom: 10px;
