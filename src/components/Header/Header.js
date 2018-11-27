@@ -51,8 +51,8 @@ export default class Header extends React.Component {
               </Col> : ''
           }
           <Col span={menuType?18:24}>
-            <span>欢迎, {this.state.userName}</span>
-            <a href="#" style={{color:"#ff5400",marginLeft:"20px"}}>退出</a>
+              <span>欢迎, {this.state.userName}</span>
+              <a href="#" style={{color:"#ff5400",marginLeft:'20px'}}>退出</a>
           </Col>
         </Row>
         {

@@ -101,20 +101,24 @@ const menuList = [
     },
     {
         title: '图标',
-        key: '/charts',
+        key: '/echarts',
         children: [
             {
                 title: '柱形图',
-                key: '/charts/bar'
+                key: '/echarts/bar'
             },
             {
                 title: '饼图',
-                key: '/charts/pie'
+                key: '/echarts/pie'
             },
             {
                 title: '折线图',
-                key: '/charts/line'
+                key: '/echarts/line'
             },
+             {
+                 title: '地图',
+                 key: '/echarts/map'
+             },
         ]
     },
     {
