@@ -115,10 +115,10 @@ const menuList = [
                 title: '折线图',
                 key: '/echarts/line'
             },
-             {
-                 title: '地图',
-                 key: '/echarts/map'
-             },
+            //  {
+            //      title: '地图',
+            //      key: '/echarts/map'
+            //  },
         ]
     },
     {

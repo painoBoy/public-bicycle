@@ -130,7 +130,7 @@ export default class StaffManage extends React.Component {
             { title: "手机号", dataIndex: "mobile" },
             {
                 title: '状态',
-                dataIndex: 'state',
+                dataIndex: 'games',
                 width: 120,
                 render(state) {
                     let config = {
@@ -262,8 +262,8 @@ class UserForm extends React.Component {
             </FormItem>
             <FormItem label="状态" {...formItemLayout}>
                 {
-                    getFieldDecorator('state',{
-                        initialValue:userInfo.state
+                    getFieldDecorator('games',{
+                        initialValue: userInfo.games
                     })(
                     <Select>
                         <Option value={1}>咸鱼一条</Option>

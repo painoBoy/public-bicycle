@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter,Route,Switch} from 'react-router-dom'
+import {HashRouter,Route,Switch,Redirect} from 'react-router-dom'
 import App from './App'
 import Login from './pages/login/login'
 import Admin from './admin'
@@ -36,11 +36,13 @@ export default class IRouter extends React.Component{
             <App>
               <Switch>
                 <Route path="/login" component={Login} />
-                <Route path="/common" render={() => <Common>
+                <Route path="/common" render={() => 
+                <Common>
                       <Route path="/common/order/detail/:orderId" component={OrderDetail} />
                     </Common>
                 } />
-                <Route path="/" render={() => <Admin>
+                <Route path="/" render={() => 
+                <Admin>
                       <Switch>
                         <Route path="/home" component={Home} />
                         <Route path="/ui/buttons" component={Buttons} />
@@ -65,6 +67,8 @@ export default class IRouter extends React.Component{
                         <Route path="/echarts/map" component={Maps} />
                         <Route path="/rich" component={Rich} />
                         <Route path="/permission" component={PermissionUser} />
+                        <Redirect to="/home"/>
+
                         <Route component={noFound} />
                       </Switch>
                     </Admin>} />

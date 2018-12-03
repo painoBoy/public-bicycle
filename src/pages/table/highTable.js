@@ -165,14 +165,6 @@ export default class highTable extends React.Component{
               width:80,
           },
           {
-            title:'状态',
-            dataIndex:'state',
-            render(idx){
-                return status[idx]
-            },
-            width:80,
-          },
-          {
             title:'操作',
             render:(text,item)=>{
                 return (<a onClick={(item) => { this.handleDelete(item) }}>删除</a>)
