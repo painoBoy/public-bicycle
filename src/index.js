@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import 'antd/dist/antd.css'
 import Admin from './admin'
-import Router from './pages/react-router/router'
+import { Provider } from 'react-redux'
+import configureStore from './redux/store/configureStore';
 import IRouter from './router'
-
-ReactDOM.render(<IRouter />, document.getElementById('root'));
+const store = configureStore();
+ReactDOM.render(
+    <Provider store={store}>
+        <IRouter />
+    </Provider>,document.getElementById('root'));
 registerServiceWorker();
