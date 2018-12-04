@@ -2,7 +2,6 @@ import React from 'react'
 import {Card,Table,Modal,Spin,Badge,message} from 'antd'
 // import './../ui/ui.less'
 import axios from 'axios'
-import Messages from '../ui/messages';
 // import Axios from './../../axios/index'
 
 export default class highTable extends React.Component{
@@ -19,7 +18,6 @@ export default class highTable extends React.Component{
 
         // 删除操作
         handleDelete = (item)=>{
-            let id = item.id;
             Modal.confirm({
                 title:'确认',
                 okText: '确认',

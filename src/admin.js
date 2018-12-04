@@ -3,7 +3,6 @@ import { Row,Col } from 'antd'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import NavLeft from './components/NavLeft/NavLeft'
-import Home from './pages/home/home'
 import './style/common.less'
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import {LocaleProvider} from 'antd'
