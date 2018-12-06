@@ -29,7 +29,7 @@ import {connect} from 'react-redux'
       }).then(res => {
         if (res.status == "success") {
           console.log(res);
-          let data = res.results[0].weather_data[1];      
+          let data = res.results[0].weather_data[0];      
           let date = new Date();
           let hour = date.getHours();
           this.setState({
