@@ -9,7 +9,7 @@ import "./NavLeft.less";
 const SubMenu = Menu.SubMenu;
 // const MenuItemGroup = Menu.ItemGroup;
 
-class NavLeft extends React.Component {
+class NavLeft extends React.PureComponent {
   state = {
     collapsed: false,
     currentKey :''

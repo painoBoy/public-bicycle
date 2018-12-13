@@ -5,7 +5,7 @@ import Main from './main'
 import Home from './home'
 import Topics from './topics'
 
-export default class Router extends React.Component{
+export default class Router extends React.PureComponent{
     render(){
         return(
                 <div>

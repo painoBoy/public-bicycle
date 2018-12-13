@@ -7,7 +7,7 @@ import 'echarts/lib/component/tooltip';
 import 'echarts/lib/component/title';
 import 'echarts/lib/component/toolbox';
 // 导入React模块类开发的echarts
-import ReactEcharts from 'echarts-for-react';
+// import ReactEcharts from 'echarts-for-react';
 //颜色主题
 import echartTheme from '../echartsTheme'
 

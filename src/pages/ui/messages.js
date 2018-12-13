@@ -2,7 +2,7 @@ import React from "react";
 import { Card ,Button,message} from 'antd'
 import './ui.less'
 
-export default class Messages extends React.Component{
+export default class Messages extends React.PureComponent{
     showMessages = (type)=>{
         if(type =='success'){
             message[type]('保存成功!')

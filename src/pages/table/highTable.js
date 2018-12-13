@@ -4,7 +4,7 @@ import {Card,Table,Modal,Spin,Badge,message} from 'antd'
 import axios from 'axios'
 // import Axios from './../../axios/index'
 
-export default class highTable extends React.Component{
+export default class highTable extends React.PureComponent{
     constructor(props){
         super();
         this.state = {

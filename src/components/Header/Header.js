@@ -4,7 +4,7 @@ import "./Header.less";
 import Util from "./../../utils/utils";
 import axios from "../../axios/index";
 import {connect} from 'react-redux'
- class Header extends React.Component {
+ class Header extends React.PureComponent {
   componentWillMount() {
     this.setState({
       userName: "Norman"

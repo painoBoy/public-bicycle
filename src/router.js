@@ -30,7 +30,7 @@ import Maps from './pages/echarts/map'
 import Rich from "./pages/rich";
 import PermissionUser from './pages/perimission';
 
-export default class IRouter extends React.Component{
+export default class IRouter extends React.PureComponent{
     render(){        
         return <HashRouter>
             <App>

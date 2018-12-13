@@ -3,7 +3,7 @@ import { Card ,Tabs,message,Icon} from 'antd'
 import './ui.less'
 const TabPane = Tabs.TabPane;
 
-export default class Tabis extends React.Component{
+export default class Tabis extends React.PureComponent{
 
     componentWillMount(){
         this.newTabIndex = 0;

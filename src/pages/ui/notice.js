@@ -2,7 +2,7 @@ import React from "react";
 import { Card ,Button,notification} from 'antd'
 import './ui.less'
 
-export default class Notifications extends React.Component{
+export default class Notifications extends React.PureComponent{
     openNotication =(type,val)=>{
         notification[type]({
             placement: val,

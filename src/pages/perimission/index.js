@@ -7,7 +7,7 @@ const Option = Select.Option;
 const TreeNode = Tree.TreeNode;
 
 
-export default class PermissionUser extends React.Component {
+export default class PermissionUser extends React.PureComponent {
     state = { dataList: [], visible: false, permissionVisible: false, detailInfo:{}};
 
   componentWillMount() {

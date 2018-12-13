@@ -4,7 +4,7 @@ import './../ui/ui.less'
 import axios from 'axios'
 // import Axios from './../../axios/index'
 
-export default class BasicTables extends React.Component{
+export default class BasicTables extends React.PureComponent{
     constructor(props){
         super();
         this.state = {

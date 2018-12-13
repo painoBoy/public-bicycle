@@ -3,7 +3,7 @@ import {Card,Modal,message, Spin} from "antd";
 import axios from './../../axios'
 import "./detail.less";
 
-export default class OrderDetail extends React.Component {
+export default class OrderDetail extends React.PureComponent {
     state = {}
 
     componentWillMount(){

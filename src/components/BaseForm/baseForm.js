@@ -4,7 +4,7 @@ import Utils from './../../utils/utils';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
-class FilterForm extends React.Component{
+class FilterForm extends React.PureComponent{
 
     handleFilterSubmit = ()=>{
         let fieldsValue = this.props.form.getFieldsValue();

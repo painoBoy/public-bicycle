@@ -11,7 +11,7 @@ const InputTextArea = Input.TextArea;
 const Option = Select.Option;
 const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
-class FormRegister extends React.Component{
+class FormRegister extends React.PureComponent{
     state = {
         loading: false,
       };

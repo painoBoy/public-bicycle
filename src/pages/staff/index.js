@@ -5,7 +5,7 @@ const FormItem = Form.Item;
 const Option = Select.Option;
 const RadioGroup = Radio.Group;
 
-export default class StaffManage extends React.Component {
+export default class StaffManage extends React.PureComponent {
     state = {
         loading: true,
         userInfo:[],

@@ -8,7 +8,7 @@ import zhCN from 'antd/lib/locale-provider/zh_CN';
 import {LocaleProvider} from 'antd'
 
 
-export default class Admin extends React.Component{
+export default class Admin extends React.PureComponent{
     render(){
         return(
             <LocaleProvider locale={zhCN}>

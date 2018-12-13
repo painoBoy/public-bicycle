@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Topics extends React.Component{
+export default class Topics extends React.PureComponent{
     render(){
         return(
                 <div>

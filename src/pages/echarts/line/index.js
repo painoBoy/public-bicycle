@@ -13,7 +13,7 @@ import ReactEcharts from "echarts-for-react";
 //颜色主题
 import echartTheme from "../echartsTheme";
 
-export default class Line extends React.Component {
+export default class Line extends React.PureComponent  {
     componentWillMount() {
         echarts.registerTheme("theme", echartTheme);
     }

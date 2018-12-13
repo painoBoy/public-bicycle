@@ -11,7 +11,7 @@ import ReactEcharts from 'echarts-for-react';
 import echartTheme from '../echartsTheme'
 
 
-export default class Bar extends React.Component{
+export default class Bar extends React.PureComponent{
 
     componentWillMount(){
         echarts.registerTheme('theme',echartTheme);

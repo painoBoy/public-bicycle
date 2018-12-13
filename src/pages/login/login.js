@@ -2,7 +2,7 @@ import React from 'react'
 import {Card,Button,Form,Input,Icon,message, Checkbox} from 'antd'
 
 const FormItem = Form.Item;
-class FormLogin extends React.Component{
+class FormLogin extends React.PureComponent{
 
     handleSubmit = ()=>{
        let userInfo = this.props.form.getFieldsValue();

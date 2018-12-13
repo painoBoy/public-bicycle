@@ -5,7 +5,7 @@ import Main from './main'
 import Topics from './topics'
 
 
-export default class Home extends React.Component{
+export default class Home extends React.PureComponent{
      render(){
          return(
              <HashRouter>

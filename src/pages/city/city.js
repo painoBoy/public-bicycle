@@ -7,7 +7,7 @@ import Utils from './../../utils/utils'
 const FormItem = Form.Item;
 const Option = Select.Option;
 
-export default class City extends React.Component {
+export default class City extends React.PureComponent {
   state = {
     isShowOpenCity:false,
     list: [],

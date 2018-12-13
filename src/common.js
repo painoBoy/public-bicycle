@@ -6,7 +6,7 @@ import zhCN from 'antd/lib/locale-provider/zh_CN';
 import {LocaleProvider} from 'antd'
 
 
-export default class Common extends React.Component {
+export default class Common extends React.PureComponent {
 
     render() {
         return (

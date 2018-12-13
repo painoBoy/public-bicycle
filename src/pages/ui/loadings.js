@@ -2,7 +2,7 @@ import React from 'react'
 import {Card,Button,Alert,Icon,Spin} from 'antd'
 import './ui.less'
 
-export default class Loadings extends React.Component{
+export default class Loadings extends React.PureComponent{
 
     render(){
         const antIcon = <Icon type="loading" style={{ fontSize: 24,marginLeft:20}}  />;
